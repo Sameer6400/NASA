@@ -1,0 +1,50 @@
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Student1</title>
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#go-page-ajax").on("click", function () {
+                var std = {
+                    Id: 1,
+                    FirstName: "Hussain",
+                    LastName: "Shoail"
+                }
+                $.ajax({
+                    type: "POST",
+                    url: "/Home3/Student1",
+                    data: std
+                });
+            });
+
+        });
+
+
+
+    </script>
+</head>
+<body>
+  <a href="#" id="go-page-ajax">Go AJAX PAGE</a>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+sameer.Ahmed1810c@gmail.com
+shehzadahmedkhatri@gmail.com
+
